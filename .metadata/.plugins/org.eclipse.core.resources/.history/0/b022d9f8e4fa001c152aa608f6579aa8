@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Tim's Pizzeria: Custom Pizza Configurator</title>
+	<link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+	<h1>Build Your Own Pizza</h1>
+	
+	<form action="submit-custom-pie-builder" method="get">
+		Size <select name="size">
+			<option size="small">Small</option>
+			<option size="medium">Medium</option>
+			<option size="large">Large</option>
+		</select><br><br>
+		How many toppings? <input name="size"/><br><br>
+		<input type="checkbox" name="gf"/>Gluten-Free Crust? ($2.00 extra) <br><br>
+		Special Instructions (Optional)<br> <textarea rows="4" cols=""><input name="size"/><br><br></textarea>
+		
+		<input type="submit"/>
+	</form>
+</body>
+</html>

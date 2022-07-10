@@ -1,0 +1,42 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheer" href="/style.css"/>
+</head>
+
+<body>
+
+	<header>
+		<h1>Welcome to Tim's Pizzeria</h1>
+	</header>
+	
+	<div class="specialty">
+		<h3>Specialty Pizzas</h3>
+		
+		<ul class="specialtylist">
+			<li><a href="/anchovy-lovers">Anchovy Lover's</a></li>
+			<li><a href="/paleo-pizza">Paleo Pizza</a></li>
+			<li><a href="/dessert-pizza">Dessert Pizza</a></li>
+		</ul>
+	</div>
+	
+	<div class="custom">
+		<h3>Custom Pizza</h3>
+		
+		<a>Build your own!</a>
+	</div>
+	
+	<div class="review">
+		<h3>Leave a review</h3>
+		
+		<a>Click here to leave a review</a>
+	</div>
+
+</body>
+</html>

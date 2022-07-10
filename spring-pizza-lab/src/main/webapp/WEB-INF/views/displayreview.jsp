@@ -18,7 +18,7 @@
 		
 		Comment<br>
 		
-		<textarea rows="6" cols="55" name="body" required></textarea><br><br>
+		<textarea minlength="5"rows="6" cols="55" name="body" required></textarea><br><br>
 		
 		Rating<br><br>
 		<input type="radio" name="rating" value="5" required> 5 (best) -

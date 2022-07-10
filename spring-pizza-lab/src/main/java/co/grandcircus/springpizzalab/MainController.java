@@ -34,6 +34,16 @@ public class MainController {
 		model.addAttribute("rating", rating);
 		model.addAttribute("body", body);
 		
+		if(name.length() == 0) {
+			name = "Error: review not submitted due to lack of name field";
+		}
+		if(body.length() < 5) {
+			body = "Error: review not submitted due to insufficient review body";
+		}
+		if(rating.length() == 0) {
+			rating = "Error: review not submitted due to rating not being selected";
+		}
+		
 		return "displayreviewconfirmation";
 	}
 	
@@ -53,7 +63,7 @@ public class MainController {
 		}
 		
 		if(instructions.equals("")) {
-			instructions = "none";
+			instructions = "no special instructions";
 		}
 		
 		model.addAttribute("size", size);
@@ -62,6 +72,9 @@ public class MainController {
 		model.addAttribute("instructions", instructions);
 		
 		int numToppings = Integer.valueOf(toppingsCount);
+		if(numToppings < 0 || numToppings > 10) {
+			toppingsCount = "Number of toppings must be between 0 and 10";
+		}
 		
 		double price = 0.0;
 		if(size.equals("small")) {

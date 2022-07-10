@@ -21,12 +21,12 @@
 			<option value="large">Large</option>
 		</select><br><br>
 		
-		How many toppings? <input required name="toppingsCount"/><br><br>
+		How many toppings? (0-10):<input min=0 max=10 value=0 type="number" required name="toppingsCount"/><br><br>
 		
 		<input type="checkbox" name="gf" value="true"/>Gluten-Free Crust? ($2.00 extra) <br><br>
 		
 		Special Instructions (Optional)<br>
-		<textarea rows="4" cols="35" name="instructions"></textarea><br><br>
+		<textarea placeholder="type special instructions here"rows="4" cols="35" name="instructions"></textarea><br><br>
 	
 		<input type="submit" form="pizzaform" value="Calculate Price"/>
 		<a href="/"> Never Mind</a>
